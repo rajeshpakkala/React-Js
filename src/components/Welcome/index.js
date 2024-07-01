@@ -1,10 +1,22 @@
-import Welcome from './components/Counter'
-import { Component } from 'react';
+import './App.js'
+import React from 'react';
 
+const Welcome=(props)=>{
+    const{name,greeting}=props;
+    return (
+    <h1>{greeting},{name}</h1>
+  )
+};
+export default Welcome;
+
+//
+/*
+import Welcome from './components/Welcome'
+import { Component } from 'react';
 class App extends Component {
   state={isLoggedIn : true,}
 
-  buttonAuth=()=>{
+  ButtonAuth=()=>{
     const {isLoggedIn}=this.state
     if(isLoggedIn === true)
     {
@@ -19,7 +31,7 @@ class App extends Component {
     return(
       <div>
         <Welcome greeting="hello" name="user "/>
-     {this.buttonAuth()}
+     {this.ButtonAuth()}
       
       </div>
     )
@@ -81,6 +93,7 @@ if(isLoggedIn === true)
       </div>
     )
 
-*/
 
 export default App;
+
+*/
